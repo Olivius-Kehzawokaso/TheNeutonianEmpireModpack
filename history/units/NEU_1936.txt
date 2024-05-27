@@ -1,0 +1,411 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = NEU_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+        	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+	}
+	support = {
+        	engineer = { x = 0 y = 0 }
+        	artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Division"
+	division_names_group = NEU_Tan_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+        	mot_recon = { x = 0 y = 0 }
+        	engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorised Infantry Division"
+	division_names_group = NEU_Mot_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        	artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Mountaineers"
+	division_names_group = NEU_Mou_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		mountaineers = { x = 2 y = 4 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+	division_names_group = NEU_Cav_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        	cavalry = { x = 0 y = 1 }
+        	cavalry = { x = 0 y = 2 }
+        	cavalry = { x = 0 y = 3 }
+        	cavalry = { x = 0 y = 4 }
+        	cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+        	cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	### 1. Army ###
+	# I. Army Corps (State 188 - Memel)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 3288
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 3288
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 3288
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	# II. Army Corps (State 763 - Königsberg)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 6332
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 6332
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 6332
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 5 }
+		location = 395
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	# III. Army Corps (State 5 - Ermland-Masuren)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 6 }
+		location = 6375
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 7 }
+		location = 6375
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	### 2. Army ###
+	# IV. Army Corps (State 85 - Danzig)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 8 }
+		location = 362
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 9 }
+		location = 362
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 362
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 279
+		division_template = "Motorised Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 279
+		division_template = "Motorised Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 10 }
+		location = 3295
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	# V. Army Corps (State 86 - Poznan)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 11 }
+		location = 6558
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 12 }
+		location = 6558
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 6558
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 6558
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 6558
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	# VI. Army Corps (State 38 - Western Poland)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 13 }
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 14 }
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 5 }
+		location = 9508
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	### 3. Army ###
+	# VII. Army Corps (State 90 - Kielce)
+		division= {	
+		division_name = { is_name_ordered = yes name_order = 15 }
+		location = 11430
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 16 }
+		location = 11430
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}	
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 17 }
+		location = 3458
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 18 }
+		location = 3458
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	# VII. Army Corps (State 10 - Warszawa)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 19 }
+		location = 3544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 20 }
+		location = 3544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 3544
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 5 }
+		location = 3544
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 6 }
+		location = 402
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	# VII. Army Corps (State 98 - Plock)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 21 }
+		location = 6401
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 22 }
+		location = 6401
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 6 }
+		location = 6401
+		division_template = "Tank Division"
+		start_experience_factor = 0.5
+	}
+	## IX. Army Corps (State 97 - Bialystok)
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 23 }
+		location = 11301
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 24 }
+		location = 3254
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+}
+
+air_wings = {
+#	83 = { 
+#		fighter_equipment_0 =  {
+#			owner = "NEU" 
+#			amount = 200
+#		}
+#		name = "1. Swadron"
+#	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NEU"
+		}
+		requested_factories = 10
+		progress = 0.5
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NEU"
+		}
+		requested_factories = 4
+		progress = 0.5
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "NEU"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 50
+	}
+}

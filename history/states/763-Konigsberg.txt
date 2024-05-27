@@ -1,0 +1,29 @@
+
+state={
+	id = 763
+	name = "STATE_763"
+	manpower = 15140234
+	state_category = megalopolis
+	resources = {
+		steel = 14
+		aluminium = 6
+		rubber = 2
+		oil = 8
+	}
+	history = {
+		owner = NEU
+		victory_points = { 6332 50 } # Königsberg
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 2
+			anti_air_building = 3
+			6332 = {
+				naval_base = 8
+			}
+			air_base = 10
+		}
+		add_core_of = NEU
+	}
+	provinces = { 281 348 395 3384 6332 11265 }
+}

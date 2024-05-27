@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_focus_generic_chromium"
+	texturefile = "gfx/interface/goals/focus_generic_chromium.dds"			
+	}
+}

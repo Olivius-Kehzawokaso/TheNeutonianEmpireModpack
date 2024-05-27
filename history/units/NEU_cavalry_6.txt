@@ -1,0 +1,38 @@
+﻿units = {
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		division_name = { is_name_ordered = yes }
+		location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.5
+	}
+}

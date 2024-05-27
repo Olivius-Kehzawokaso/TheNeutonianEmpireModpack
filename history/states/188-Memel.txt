@@ -1,0 +1,23 @@
+state = {
+	id = 188
+	name = "STATE_188"
+	manpower = 600000
+	state_category = town
+	resources = {
+		steel = 6
+		aluminium = 4
+	}
+	history = {
+		victory_points = { 3288 3 } # Memel
+		owner = NEU
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			3288 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = NEU
+	}
+	provinces = { 3288 }
+}

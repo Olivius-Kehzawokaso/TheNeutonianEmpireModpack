@@ -1,0 +1,57 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_peace_pact_leader"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_defense_ships.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_peace_pact_member"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_defense_ships2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_neutonian_high_command"
+		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_will_to_fight"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_great_infrastructure"
+		texturefile = "gfx/interface/ideas/idea_generic_build_infrastructure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_modern_factories"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_modern_research_facilities"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NEU_idea_neutonian_naval_pride"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_NEU_advisor_devinilius"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_NEU_advisor_mehnakama"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_NEU_advisor_lehkizawa"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+	}
+}

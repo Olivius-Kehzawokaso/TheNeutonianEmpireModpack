@@ -1,0 +1,56 @@
+﻿l_english:
+
+	NEU.1.t:0 "The Neutonian Empire invites us"
+	NEU.1.desc:0 "The Neutonian Empire invites us"
+	NEU.1.a:0 "Accept the Invitation"
+	NEU.1.b:0 "Decline the Invitation"
+
+	NEU.2.t:0 "The Neutonian Empire invites us"
+	NEU.2.desc:0 "The Neutonian Empire invites us"
+	NEU.2.a:0 "Accept the Invitation"
+	NEU.2.b:0 "Decline the Invitation"
+
+	NEU.3.t:0 "The Neutonian Empire invites us"
+	NEU.3.desc:0 "The Neutonian Empire invites us"
+	NEU.3.a:0 "Accept the Invitation"
+	NEU.3.b:0 "Decline the Invitation"
+
+	NEU.4.t:0 "The Neutonian Empire invites us"
+	NEU.4.desc:0 "The Neutonian Empire invites us"
+	NEU.4.a:0 "Accept the Invitation"
+	NEU.4.b:0 "Decline the Invitation"
+
+	NEU.5.t:0 "The Neutonian Empire invites us"
+	NEU.5.desc:0 "The Neutonian Empire invites us"
+	NEU.5.a:0 "Accept the Invitation"
+	NEU.5.b:0 "Decline the Invitation"
+
+	NEU.11.t:0 "The Neutonian Empire wants to improve our Relations"
+	NEU.11.desc:0 "The Neutonian Empire wants to improve our Relations"
+	NEU.11.a:0 "Accept"
+	NEU.11.b:0 "Decline"
+
+	NEU.21.t:0 "The Neutonian Empire wants to buy Oberschlesien"
+	NEU.21.desc:0 "The Neutonian Empire wants to buy Oberschlesien"
+	NEU.21.a:0 "Accept"
+	NEU.21.b:0 "Decline"
+
+	NEU.22.t:0 "The Neutonian Empire wants to buy Gotland"
+	NEU.22.desc:0 "The Neutonian Empire wants to buy Gotland"
+	NEU.22.a:0 "Accept"
+	NEU.22.b:0 "Decline"
+
+	NEU.100.t:0 "Change Capital"
+	NEU.100.desc:0 "Change your Capital"
+	NEU.100.a:0 "Europe"
+
+	NEU.101.t:0 "Europe Page 1"
+	NEU.101.desc:0 "European Capitals"
+	NEU.101.a:0 "Königsberg"
+	NEU.101.b:0 "Berlin"
+	NEU.101.c:0 "Moskau"
+
+	NEU.1000.t:0 "The Germans wants to join us"
+	NEU.1000.desc:0 "The Germans and their allies want to join our faction "
+	NEU.1000.a:0 "Accept"
+	NEU.1000.b:0 "Decline"

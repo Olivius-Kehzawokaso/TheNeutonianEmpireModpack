@@ -1,0 +1,312 @@
+add_namespace = NEU
+
+# befriend Lithuania
+country_event = {
+	id = NEU.1
+	title = NEU.1.t
+	desc = NEU.1.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.1.a
+		NEU = { add_to_faction = LIT }
+	}
+	option = {
+		name = NEU.1.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				LIT = { has_war_support < 0.7 }
+				factor = 0
+			}
+		}
+	}
+}
+# befriend Latvia
+country_event = {
+	id = NEU.2
+	title = NEU.2.t
+	desc = NEU.2.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.2.a
+		NEU = { add_to_faction = LAT }
+	}
+	option = {
+		name = NEU.2.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				LAT = { has_war_support < 0.7 }
+				factor = 0
+			}
+		}
+	}
+}
+# befriend Estonia
+country_event = {
+	id = NEU.3
+	title = NEU.3.t
+	desc = NEU.3.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.3.a
+		NEU = { add_to_faction = EST }
+	}
+	option = {
+		name = NEU.3.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				EST = { has_war_support < 0.7 }
+				factor = 0
+			}
+		}
+	}
+}
+# befriend Poland
+country_event = {
+	id = NEU.4
+	title = NEU.4.t
+	desc = NEU.4.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.4.a
+		NEU = { add_to_faction = POL }
+	}
+	option = {
+		name = NEU.4.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				POL = { has_war_support < 0.7 }
+				factor = 0
+			}
+		}
+	}
+}
+# befriend Sweden
+country_event = {
+	id = NEU.5
+	title = NEU.5.t
+	desc = NEU.5.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.5.a
+		ai_chance = { base = 10 }
+		SWE = {
+			add_ideas = SWE_idea_vem_kan_stoppa_mig
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "NEU"
+				value = 100
+			}
+		}
+		NEU = { add_to_faction = SWE }
+	}
+	option = {
+		name = NEU.5.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				SWE = { has_war_support < 0.5 }
+				factor = 0
+			}
+		}
+	}
+}
+# improve relations Sweden
+country_event = {
+	id = NEU.11
+	title = NEU.11.t
+	desc = NEU.11.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.11.a
+		ai_chance = { base = 10 }
+		SWE = {
+			remove_ideas = neutrality_idea
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "NEU"
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = NEU.11.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				SWE = { has_war_support < 0.5 }
+				factor = 0
+			}
+		}
+	}
+}
+# buy Oberschlesien
+country_event = {
+	id = NEU.21
+	title = NEU.21.t
+	desc = NEU.21.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.21.a
+		ai_chance = { base = 100 }
+		67 = {
+			remove_core_of = GER
+			add_core_of = NEU
+		}
+		NEU = { set_state_owner = 67 set_state_controller = 67 }
+		GER = { 
+			add_political_power = 100
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = NEU.21.b
+		ai_chance = { base = 0 }
+	}
+}
+# buy Gotland
+country_event = {
+	id = NEU.22
+	title = NEU.22.t
+	desc = NEU.22.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.22.a
+		ai_chance = { base = 100 }
+		124 = {
+			remove_core_of = SWE
+			add_core_of = NEU
+		}
+		NEU = { set_state_owner = 124 set_state_controller = 124 }
+		SWE = { 
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = "NEU"
+				value = 100
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = NEU.21.b
+		ai_chance = { base = 0 }
+	}
+}

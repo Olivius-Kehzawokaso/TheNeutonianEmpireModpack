@@ -1,0 +1,570 @@
+ideas = {
+	country = {
+		NEU_idea_peace_pact_leader = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				justify_war_goal_time = -0.25
+				conscription = 0.01
+				compliance_gain = 0.1
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.10
+				min_export = -0.1
+			}
+		}
+		NEU_idea_peace_pact_member = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				justify_war_goal_time = -0.1
+				conscription = 0.01
+				compliance_gain = 0.05
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.05
+				min_export = -0.05
+			}
+		}
+		NEU_idea_neutonian_high_command = {
+			allowed = { original_tag = NEU }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_org_Factor = 0.1
+				planning_speed = 0.25
+			}
+			rule = {
+				can_create_factions = yes
+				can_boost_other_ideologies = yes
+				can_force_government = yes
+				can_guarantee_other_ideologies = yes
+				can_lower_tension = yes
+			}
+		}
+		NEU_idea_will_to_fight = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+				war_support_factor = 0.1
+				training_time_factor = -0.25
+				send_volunteer_divisions_required = -0.5
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+		NEU_idea_great_infrastructure = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		NEU_idea_modern_factories = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+		NEU_idea_modern_research_facilities = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		NEU_idea_neutonian_naval_pride = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				destroyer = {
+					build_cost_ic = -0.20
+					instant = yes
+				}
+				light_cruiser = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				heavy_cruiser = {
+					build_cost_ic = -0.30
+					instant = yes
+				}
+				battleship = {
+					build_cost_ic = -0.35
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.40
+					instant = yes
+				}
+			}
+		}
+	}
+	political_advisor = {
+		NEU_advisor_devinilius = {
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_former_leader }
+			ai_will_do = { factor = 10 }
+		}
+		NEU_advisor_mehnakama = {
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_minister_defense }
+			ai_will_do = { factor = 3 }
+		}
+		NEU_advisor_lehkizawa = {
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_minister_infrastructure }
+			ai_will_do = { factor = 5 }
+		}
+	}
+	tank_manufacturer = {
+		designer = yes
+		NEU_manufacturer_fast_tanks = {
+			allowed = { original_tag = NEU }
+			research_bonus = { armor = 0.15 }
+			traits = { NEU_trait_manufacturer_fast_tanks }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_light_tanks = {
+			allowed = { original_tag = NEU }
+			research_bonus = { armor = 0.15 }
+			traits = { NEU_trait_manufacturer_light_tanks }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_medium_tanks = {
+			allowed = { original_tag = NEU }
+			research_bonus = { armor = 0.15 }
+			traits = { NEU_trait_manufacturer_medium_tanks }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_heavy_tanks = {
+			allowed = { original_tag = NEU }
+			research_bonus = { armor = 0.15 }
+			traits = { NEU_trait_manufacturer_heavy_tanks }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		NEU_manufacturer_carriers = {
+			allowed = { original_tag = NEU }
+			research_bonus = { naval_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_carriers }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_capital_ships = {
+			allowed = { original_tag = NEU }
+			research_bonus = { naval_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_capital_ships }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_small_ships = {
+			allowed = { original_tag = NEU }
+			research_bonus = { naval_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_small_ships }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_submarines = {
+			allowed = { original_tag = NEU }
+			research_bonus = { naval_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_submarines }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	aircraft_manufacturer = { 
+		designer = yes
+		NEU_manufacturer_light_aircraft = {
+			allowed = { original_tag = NEU }
+			research_bonus = { air_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_aircraft_light }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_close_air_support = { 
+			allowed = { original_tag = NEU }
+			research_bonus = { air_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_close_air_support }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_reliable_aircraft = { 
+			allowed = { original_tag = NEU }
+			research_bonus = { air_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_aircraft_reliability }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_carrier_aircraft = {
+			allowed = { original_tag = NEU }
+			research_bonus = { air_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_aircraft_carrier }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_manufacturer_range_aircraft = {
+			allowed = { original_tag = NEU }
+			research_bonus = { air_equipment = 0.15 }
+			traits = { NEU_trait_manufacturer_aircraft_range }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	industrial_concern = {
+		NEU_industrial_concern_synthetic_ressources = {
+			allowed = { original_tag = NEU }
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			ai_will_do = { factor = 1 }
+		}
+		NEU_industrial_concern_industry = {
+			allowed = { original_tag = NEU }
+			research_bonus = { industry = 0.15 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_industrial_concern_electronics = {
+			allowed = { original_tag = NEU }
+			research_bonus = { electronics = 0.15 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		NEU_material_manufacturer_artillery = {
+			allowed = { original_tag = NEU }
+			research_bonus = { artillery = 0.15 }
+		}
+		NEU_material_manufacturer_infantry = {
+			allowed = { original_tag = NEU }
+			research_bonus = { infantry_weapons = 0.15 }
+		}
+		NEU_material_manufacturer_motorised = {
+			allowed = { original_tag = NEU }
+			research_bonus = { motorized_equipment = 0.15 }
+		}
+	}
+	theorist = {
+		NEU_theorist_rocketry = {
+			ledger = air
+			allowed = { original_tag = NEU }
+			research_bonus = { rocketry = 0.15 }
+			traits = { NEU_trait_theorist_rocketry }
+		}
+		NEU_theorist_nuclear = {
+			ledger = army
+			allowed = { original_tag = NEU }
+			research_bonus = { nuclear = 0.15 }
+			traits = { NEU_trait_theorist_nuclear }
+		}
+		NEU_theorist_land_doctrine = {
+			ledger = army
+			allowed = { original_tag = NEU }
+			research_bonus = { land_doctrine = 0.10 }
+			traits = { blitzkrieg_theorist }
+		}
+		NEU_theorist_mobile_warfare = {
+			ledger = army
+			allowed = { original_tag = NEU }
+			cost = 200
+			research_bonus = { cat_mobile_warfare = 0.15 }
+			traits = { mobile_warfare_expert }
+		}
+		NEU_theorist_battlefield_support = {
+			ledger = air
+			allowed = { original_tag = NEU }
+			cost = 200
+			research_bonus = { cat_battlefield_support = 0.15 }
+			traits = { close_air_support_proponent }
+		}
+		NEU_theorist_air_doctrine = {
+			ledger = air
+			allowed = { original_tag = NEU }
+			research_bonus = { air_doctrine = 0.10 }
+			traits = { air_warfare_theorist }
+		}
+		NEU_theorist_dive_bombers = {
+			ledger = air
+			allowed = { original_tag = NEU }
+			research_bonus = { air_doctrine = 0.10 }
+			traits = { dive_bomber }
+		}
+		NEU_theorist_trade_interdiction = {
+			ledger = navy
+			allowed = { original_tag = NEU }
+			cost = 200
+			research_bonus = { cat_trade_interdiction = 0.20 }
+			traits = { submarine_specialist }
+		}
+		NEU_theorist_naval_doctrine = {
+			ledger = navy
+			allowed = { original_tag = NEU }
+			research_bonus = { naval_doctrine = 0.10 }
+			traits = { naval_theorist }
+		}
+	}
+	army_chief = {
+		NEU_army_chief_defensive = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_defensive_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_offensive = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_offensive_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_training = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_drill_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_experience = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_reform_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_organisation = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_organizational_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_planning = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_planning_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_morale = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_morale_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_movement = {
+			allowed = { original_tag = NEU }
+			traits = { army_chief_maneuver_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_entrenchment = {
+			allowed = { original_tag = NEU }
+			traits = { army_entrenchment_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_armored = {
+			allowed = { original_tag = NEU }
+			traits = { army_armored_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_artillery = {
+			allowed = { original_tag = NEU }
+			traits = { army_artillery_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_infantry = {
+			allowed = { original_tag = NEU }
+			traits = { army_infantry_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_special_forces = {
+			allowed = { original_tag = NEU }
+			traits = { army_commando_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_cavalry = {
+			allowed = { original_tag = NEU }
+			traits = { army_cavalry_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_concealment = {
+			allowed = { original_tag = NEU }
+			traits = { army_concealment_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_logistics = {
+			allowed = { original_tag = NEU }
+			traits = { army_logistics_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_army_chief_regrouping = {
+			allowed = { original_tag = NEU }
+			traits = { army_regrouping_3 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	air_chief = {
+		NEU_air_chief_experience = {
+			allowed = { original_tag = NEU }
+			traits = { air_chief_reform_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_safety = {
+			allowed = { original_tag = NEU }
+			traits = { air_chief_safety_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_night_operations = {
+			allowed = { original_tag = NEU }
+			traits = { air_chief_night_operations_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_ground_support = {
+			allowed = { original_tag = NEU }
+			traits = { air_chief_ground_support_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_all_weather = {
+			allowed = { original_tag = NEU }
+			traits = { air_chief_all_weather_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_combat_training = {
+			allowed = { original_tag = NEU }
+			traits = { air_air_combat_training_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_naval_strikes = {
+			allowed = { original_tag = NEU }
+			traits = { air_naval_strike_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_interception = {
+			allowed = { original_tag = NEU }
+			traits = { air_bomber_interception_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_air_superiority = {
+			allowed = { original_tag = NEU }
+			traits = { air_air_superiority_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_close_air_support = {
+			allowed = { original_tag = NEU }
+			traits = { air_close_air_support_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_strategic_bombing = {
+			allowed = { original_tag = NEU }
+			traits = { air_strategic_bombing_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_air_chief_paratroopers = {
+			allowed = { original_tag = NEU }
+			traits = { air_airborne_3 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	navy_chief = {
+		NEU_navy_chief_battle_strength = {
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_decisive_battle_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_aviation = {
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_naval_aviation_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_convoi_raiding = {
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_commerce_raiding_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_experience = {
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_reform_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_maneuvering = {
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_maneuver_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_anti_submarine = {
+			allowed = { original_tag = NEU }
+			traits = { navy_anti_submarine_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_anti_air = {
+			allowed = { original_tag = NEU }
+			traits = { navy_naval_air_defense_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_logistics = {
+			allowed = { original_tag = NEU }
+			traits = { navy_fleet_logistics_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_amphibious_landings = {
+			allowed = { original_tag = NEU }
+			traits = { navy_amphibious_assault_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_submarines = {
+			allowed = { original_tag = NEU }
+			traits = { navy_submarine_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_capital_ships = {
+			allowed = { original_tag = NEU }
+			traits = { navy_capital_ship_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_small_ships = {
+			allowed = { original_tag = NEU }
+			traits = { navy_screen_3 }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_navy_chief_carriers = {
+			allowed = { original_tag = NEU }
+			traits = { navy_carrier_3 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	high_command = {
+		NEU_high_command_army_fighting_power = {
+			cost = 250
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_army_strength }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_high_command_experience = {
+			cost = 250
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_experience }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_high_command_logistics = {
+			cost = 250
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_logistics }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_high_command_speed = {
+			cost = 250
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_speed }
+			ai_will_do = { factor = 1 }
+		}
+		NEU_high_command_superior_ships = {
+			cost = 350
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_naval_superiority }
+			ai_will_do = { factor = 1 }
+		}
+	}
+}

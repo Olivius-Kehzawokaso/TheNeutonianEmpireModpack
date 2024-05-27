@@ -1,0 +1,23 @@
+﻿
+units= {
+	fleet = {
+		name = "1-to Zawehsokowalehta"		
+		naval_base = 362  # Danzig
+		task_force = {				
+			name = "1-to Tatßehkowalehta"
+			location = 362
+			ship = { name = "Alehtiza" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NEU version_name = "Quintinius Class" }}}
+			ship = { name = "Alißia" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NEU version_name = "Quintinius Class" }}}
+			ship = { name = "Quintinius" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NEU version_name = "Quintinius Class" }}}
+			ship = { name = "Lehtika I" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = NEU version_name = "Lehtika Class" }}}
+			ship = { name = "Lehtika II" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = NEU version_name = "Lehtika Class" }}}
+			ship = { name = "Lehtika III" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = NEU version_name = "Lehtika Class" }}}
+			ship = { name = "Lehtika IV" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = NEU version_name = "Lehtika Class" }}}
+			ship = { name = "Lehtika V" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = NEU version_name = "Lehtika Class" }}}
+		}
+	}
+}
+
+instant_effect = {
+
+}

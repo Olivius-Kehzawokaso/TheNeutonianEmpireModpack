@@ -1,0 +1,528 @@
+NEU_economy_decisions = {
+	NEU_develop_factories = {
+		cost = 100
+		days_re_enable = 30
+		available = {
+			any_owned_state = {
+				free_building_slots = {
+   					building = industrial_complex
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+   						building = industrial_complex
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { base = 0 }
+	}
+	NEU_find_steel = {
+		icon = generic_prospect_for_resources
+		cost = 100
+		days_re_enable = 30
+		available = {
+			num_of_civilian_factories > 5
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					num_of_civilian_factories > 5
+					num_of_civilian_factories < 11
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 5
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 10
+					num_of_civilian_factories < 21
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 10
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 20
+					num_of_civilian_factories < 31
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 15
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 30
+					num_of_civilian_factories < 51
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 20
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 50
+					num_of_civilian_factories < 101
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 100
+					num_of_civilian_factories < 201
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 15
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 15
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 200
+					num_of_civilian_factories < 301
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 20
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 20
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 300
+					num_of_civilian_factories < 501
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 500
+					#num_of_civilian_factories < 1001
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = steel
+						amount = 25
+						state = THIS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NEU_find_oil = {
+		icon = generic_prospect_for_resources
+		cost = 100
+		days_re_enable = 30
+		available = {
+			num_of_civilian_factories > 5
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					num_of_civilian_factories > 5
+					num_of_civilian_factories < 11
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 1
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 10
+					num_of_civilian_factories < 21
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 2
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 20
+					num_of_civilian_factories < 31
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 3
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 30
+					num_of_civilian_factories < 51
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 4
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 50
+					num_of_civilian_factories < 101
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 100
+					num_of_civilian_factories < 201
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 3
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 3
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 200
+					num_of_civilian_factories < 301
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 4
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 4
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 300
+					num_of_civilian_factories < 501
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 500
+					#num_of_civilian_factories < 1001
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = oil
+						amount = 5
+						state = THIS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NEU_find_chromium = {
+		icon = generic_prospect_for_resources
+		cost = 100
+		days_re_enable = 30
+		available = {
+			num_of_civilian_factories > 5
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					num_of_civilian_factories > 5
+					num_of_civilian_factories < 11
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 2
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 10
+					num_of_civilian_factories < 21
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 4
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 20
+					num_of_civilian_factories < 31
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 6
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 30
+					num_of_civilian_factories < 51
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 8
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 50
+					num_of_civilian_factories < 101
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 100
+					num_of_civilian_factories < 201
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 6
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 6
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 200
+					num_of_civilian_factories < 301
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 8
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 8
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 300
+					num_of_civilian_factories < 501
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+			}
+			else if = {
+				limit = {
+					num_of_civilian_factories > 500
+					#num_of_civilian_factories < 1001
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+				random_owned_state = {
+					add_ressource = {
+						type = chromium
+						amount = 10
+						state = THIS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

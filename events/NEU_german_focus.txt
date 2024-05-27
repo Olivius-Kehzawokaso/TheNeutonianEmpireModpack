@@ -1,0 +1,22 @@
+add_namespace = NEU
+
+# befriend Neutonian Empire
+country_event = {
+	id = NEU.1000
+	title = NEU.1000.t
+	desc = NEU.1000.desc
+	is_triggered_only = yes
+	option = {
+		name = NEU.1000.a
+		ai_chance = { base = 5 }
+		NEU = { add_to_faction = GER }
+		every_other_country = {
+			limit = { is_in_faction_with = GER }
+			NEU = { add_to_faction = THIS }
+		}
+	}
+	option = {
+		name = NEU.1000.b
+		ai_chance = { base = 1 }
+	}
+}

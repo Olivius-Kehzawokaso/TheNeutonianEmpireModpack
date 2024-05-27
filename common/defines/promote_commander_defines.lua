@@ -1,0 +1,1 @@
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 25.0

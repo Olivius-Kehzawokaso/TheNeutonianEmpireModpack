@@ -1,0 +1,54 @@
+NEU_core_decisions = {
+	NEU_add_core = {
+		icon = generic_prepare_civil_war
+		cost = 50
+		available = {
+			has_core_occupation_modifier = {
+				occupied_country_tag = FROM
+				modifier = compliance_80
+			}
+		}
+       		visible = {
+			has_core_occupation_modifier = {
+				occupied_country_tag = FROM
+				modifier = compliance_60
+			}
+        	}
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FROM
+					is_owned_by = ROOT
+				}
+				ROOT = {
+					add_state_core = PREV
+				}
+			}
+		}
+		target_non_existing = yes
+		target_array = occupied_countries
+		ai_will_do = {
+			base = 0
+			modifier = {
+				base = 1000
+				OR {
+					tag = NKL
+					tag = NKE
+					tag = NKA
+					tag = NKB
+					tag = NKP
+					tag = NKS
+					tag = NKT
+					tag = NKV
+					tag = NDL
+					tag = NDJ
+					tag = NDK
+					tag = NDE
+					tag = NDR
+					tag = NDA
+				}
+			}
+		}
+	}
+}
+

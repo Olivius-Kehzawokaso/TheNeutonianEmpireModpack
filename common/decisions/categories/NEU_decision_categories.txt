@@ -1,0 +1,13 @@
+NEU_core_decisions = {
+	icon = generic_political_actions
+}
+NEU_economy_decisions = {
+	icon = generic_prospect_for_resources
+	visible = { always = no }
+}
+NEU_neutonian_empire_decisions = {
+	icon = generic_political_actions
+	visible = {
+		original_tag = NEU
+	}
+}

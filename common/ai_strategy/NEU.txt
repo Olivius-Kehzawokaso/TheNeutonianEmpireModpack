@@ -1,0 +1,416 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+# building_target
+
+NEU_unit_production = {
+	allowed = { original_tag = NEU }
+	enable = { always = yes }
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry 
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200 #because doctrine this = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = -5 #because doctrine this = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 75 #88 to 70
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -35 #because doctrine this = 15
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -40
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -10
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -75 #because doctrine this = 50
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 175
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -65
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -80
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -120
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 10 #30 to 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 85 #20 to 40
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10 
+	} 
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -70
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 3
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 4
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = strat_bomber_equipment
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment
+		value = 30
+	}
+}	
+
+NEU_highered_armored_production = {
+	allowed = { original_tag = NEU }
+	enable = { num_of_military_factories > 109 }
+	abort = { num_of_military_factories < 110 }
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 40
+	}
+}
+
+NEU_dont_waste_xp_until_medium_armor = {
+	allowed = { original_tag = NEU }
+	enable = { always = yes }
+	abort = { has_template_majority_unit = medium_armor }
+
+	ai_strategy = {
+		type = template_prio
+		id = paratrooper
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -100
+	}
+}
+
+NEU_wants_civ = {
+	allowed = { original_tag = NEU }
+	enable = {
+		has_government = fascism
+		date < 1938.1.1
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 69
+	}
+}
+
+NEU_war_prep = {
+	allowed = { original_tag = NEU }
+	enable = { has_completed_focus = NEU_political_statements }
+	abort = { has_completed_focus = NEU_claim_lithuania }
+	ai_strategy = {
+		type = prepare_for_war
+		id = "LIT"
+		value = 420
+	}
+}
+
+NEU_war_with_lithuania = {
+	allowed = { original_tag = NEU }
+	enable = {
+		has_completed_focus = NEU_claim_lithuania
+		country_exists = LIT
+	}
+	abort = { NOT = { country_exists = LIT } }
+	
+	ai_strategy = {
+		type = antagonize
+		id = "LIT"
+		value = 420
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LIT"
+		value = 420
+	}
+}
+
+NEU_war_with_latvia = {
+	allowed = { original_tag = NEU }
+	enable = {
+		has_completed_focus = NEU_claim_latvia
+		country_exists = LAT
+	}
+	abort = { NOT = { country_exists = LAT } }
+	
+	ai_strategy = {
+		type = antagonize
+		id = "LAT"
+		value = 420
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LIT"
+		value = 420
+	}
+}
+
+NEU_war_with_estonia = {
+	allowed = { original_tag = NEU }
+	enable = {
+		has_completed_focus = NEU_claim_estonia
+		country_exists = EST
+	}
+	abort = { NOT = { country_exists = EST } }
+	
+	ai_strategy = {
+		type = antagonize
+		id = "EST"
+		value = 420
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LIT"
+		value = 420
+	}
+}
+
+NEU_war_with_poland = {
+	allowed = { original_tag = NEU }
+	enable = {
+		has_completed_focus = NEU_claim_poland
+		country_exists = POL
+	}
+	abort = { NOT = { country_exists = POL } }
+	
+	ai_strategy = {
+		type = antagonize
+		id = "POL"
+		value = 420
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LIT"
+		value = 420
+	}
+}
+
+NEU_area_priority = {
+	allowed = { original_tag = NEU }
+	enable = { always = yes }
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 200 #more focus here
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 75
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -90
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = -120 #less focus here
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -80
+	}
+}

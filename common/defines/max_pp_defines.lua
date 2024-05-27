@@ -1,0 +1,1 @@
+NDefines.NCountry.POLITICAL_POWER_UPPER_CAP = 5000.0

@@ -1,0 +1,276 @@
+leader_traits = {
+	NEU_trait_kehzawokaso = {
+		random = no
+		political_power_factor = 0.5
+		war_support_factor = 0.2
+		stability_factor = 0.1
+		justify_war_goal_time = -0.50
+		army_morale_factor = 0.25
+	}
+	NEU_trait_friendly = {
+		random = no
+		non_core_manpower = 0.025
+		opinion_gain_monthly_factor = 0.1
+		compliance_gain = 0.1
+	}
+	NEU_trait_former_leader = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+		stability_factor = 0.1
+		justify_war_goal_time = -0.1
+	}
+	NEU_trait_minister_infrastructure = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+		production_speed_industrial_complex_factor = 0.25
+		production_speed_infrastructure_factor = 0.25
+		production_speed_rail_supply_node = 0.25
+		production_speed_rail_way_factor = 0.25
+		production_speed_synthetic_refinery_factor = 0.25
+	}
+	NEU_trait_minister_defense = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_arms_factory_factor = 0.25
+		production_speed_dockyard_factor = 0.25	
+		production_speed_fuel_silo_factor = 0.25
+		production_speed_air_base_factor = 0.25
+		production_speed_naval_base_factor = 0.25
+		production_speed_rocket_site_factor = 0.25
+		production_speed_radar_station_factor = 0.25
+		production_speed_nuclear_reactor_factor = 0.25
+	}
+	NEU_trait_theorist_rocketry = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+		production_speed_rocket_site_factor = 0.25
+		add_tech_bonus = {
+   			bonus = 1.0
+    			uses = 5
+    			category = rocketry
+		}
+	}
+	NEU_trait_theorist_nuclear = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+		production_speed_nuclear_reactor_factor = 0.25
+		add_tech_bonus = {
+   			bonus = 1.0
+    			uses = 3
+    			category = nuclear
+		}
+	}
+	NEU_trait_manufacturer_fast_tanks = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.1
+				reliability = 0.1
+			}
+		}
+	}
+	NEU_trait_manufacturer_light_tanks = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.1
+				reliability = 0.1
+			}
+		}
+	}
+	NEU_trait_manufacturer_medium_tanks = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05
+				hard_attack = 0.05
+				reliability = 0.1
+			}
+		}
+	}
+	NEU_trait_manufacturer_heavy_tanks = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				hard_attack = 0.1
+				reliability = 0.1
+			}
+		}
+	}
+	NEU_trait_manufacturer_carriers = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.25
+				naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+	}
+	NEU_trait_manufacturer_capital_ships = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				naval_range = 0.25
+			}
+			capital_ship = {
+				armor_value = 0.25
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+	}
+	NEU_trait_manufacturer_small_ships = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				armor_value = 0.25
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+	}
+	NEU_trait_manufacturer_submarines = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				armor_value = 0.5
+				naval_range = 0.25
+			}
+		}
+	}
+	NEU_trait_manufacturer_aircraft_light = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = { air_agility = 0.2 maximum_speed = 0.2 reliability = 0.2 }
+			cv_fighter_equipment = { air_agility = 0.2 maximum_speed = 0.2 reliability = 0.2 }
+			scout_plane_equipment = { air_agility = 0.2 maximum_speed = 0.2 reliability = 0.2 }
+		}
+	}
+	NEU_trait_manufacturer_close_air_support = {
+		random = no
+		equipment_bonus = {
+			CAS_equipment = { air_ground_attack = 0.2 reliability = 0.2 }
+			cv_CAS_equipment = { air_ground_attack = 0.2 reliability = 0.2 }
+		}
+	}
+	NEU_trait_manufacturer_aircraft_reliability = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = { reliability = 0.3 }
+			heavy_fighter_equipment = { reliability = 0.3 }
+			tac_bomber_equipment = { reliability = 0.3 }
+			scout_plane_equipment = { reliability = 0.3 }
+		}
+	}
+	NEU_trait_manufacturer_aircraft_carrier = {
+		random = no
+		equipment_bonus = {
+			cv_fighter_equipment = { reliability = 0.2 air_agility = 0.2 }
+			cv_heavy_fighter_equipment = { reliability = 0.2 air_agility = 0.2 }
+			cv_CAS_equipment = { reliability = 0.2 air_agility = 0.2 }
+		}
+	}
+	NEU_trait_manufacturer_aircraft_range = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = { air_range = 0.25 reliability = 0.1 }
+			CAS_equipment = { air_range = 0.25 reliability = 0.1 }
+			cv_fighter_equipment = { air_range = 0.25 reliability = 0.1 }
+			cv_CAS_equipment = { air_range = 0.25 reliability = 0.1 }
+			heavy_fighter_equipment = { air_range = 0.25 reliability = 0.1 }
+			tac_bomber_equipment = { air_range = 0.25 reliability = 0.1 }
+			scout_plane_equipment = { air_range = 0.25 reliability = 0.1 }
+		}
+	}
+	NEU_trait_army_strength = {
+		sprite = 7
+		army_attack_factor = 0.15
+		army_defence_factor = 0.15
+		experience_gain_army = 0.20
+		ai_will_do = {
+			factor = 6
+		}
+	}
+	NEU_trait_military_experience = {
+		sprite = 7
+		experience_gain_army = 0.15
+		experience_gain_air = 0.15
+		experience_gain_navy = 0.15
+		ai_will_do = {
+			factor = 6
+		}
+	}
+	NEU_trait_military_logistics = {
+		sprite = 6
+		attrition = -0.15
+		navy_max_range_factor = 0.15	
+		experience_gain_army = 0.10
+		experience_gain_navy = 0.10
+		ai_will_do = {
+			factor = 6
+		}
+	}
+	NEU_trait_military_speed = {
+		sprite = 5
+		army_speed_factor = 0.05
+		naval_speed_factor = 0.10
+		air_air_superiority_agility_factor = 0.05
+		air_close_air_support_agility_factor = 0.05
+		experience_gain_army = 0.05
+		experience_gain_navy = 0.05
+		ai_will_do = {
+			factor = 6
+		}
+	}
+	NEU_trait_naval_superiority = {
+		sprite = 3
+		navy_submarine_attack_factor = 0.2
+		navy_capital_ship_attack_factor = 0.15
+		navy_screen_attack_factor = 0.15
+		navy_submarine_defence_factor = 0.15
+		navy_capital_ship_defence_factor = 0.15
+		navy_screen_defence_factor = 0.15
+		sortie_efficiency = 0.20
+		experience_gain_navy = 0.20
+		ai_will_do = {
+			factor = 8
+		}
+	}
+}

@@ -1,0 +1,1067 @@
+characters = {
+
+	### Country Leaders
+
+	NEU_olivius_kehzawokaso = {
+		name = NEU_olivius_kehzawokaso
+		portraits = {
+			civilian = {
+				large="gfx/leaders/NEU/olivius.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { NEU_trait_kehzawokaso NEU_trait_friendly }
+			id = -1
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { NEU_trait_kehzawokaso NEU_trait_friendly }
+			id = -1
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { NEU_trait_kehzawokaso NEU_trait_friendly }
+			id = -1
+		}
+		country_leader = {
+			ideology = despotic
+			traits = { NEU_trait_kehzawokaso NEU_trait_friendly }
+			id = -1
+		}
+	}
+
+	### Political Advisors
+
+	NEU_devinilius_kowehzasomano = {
+		name = NEU_devinilius_kowehzasomano
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}	
+		advisor = {
+			slot = political_advisor
+			idea_token = NEU_advisor_devinilius
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_former_leader }
+			cost = 150
+		}
+	}
+
+	NEU_mehnakama_lehsonama = {
+		name = NEU_mehnakama_lehsonama
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}	
+		advisor = {
+			slot = political_advisor
+			idea_token = NEU_advisor_mehnakama
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_minister_defense }
+			cost = 150
+		}
+	}
+
+	NEU_lehkizawa_malikoso = {
+		name = NEU_lehkizawa_malikoso
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}	
+		advisor = {
+			slot = political_advisor
+			idea_token = NEU_advisor_lehkizawa
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_minister_infrastructure }
+			cost = 150
+		}
+	}
+
+	### High Command
+
+	NEU_high_command_army_strength = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NEU_high_command_army_fighting_power
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_army_strength }
+			cost = 250
+		}
+	}
+
+	NEU_high_command_experience = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NEU_high_command_experience
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_experience }
+			cost = 250
+		}
+	}
+
+	NEU_high_command_logistics = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NEU_high_command_logistics
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_logistics }
+			cost = 250
+		}
+	}
+
+	NEU_high_command_speed = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NEU_high_command_speed
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_military_speed }
+			cost = 250
+		}
+	}
+
+	NEU_high_command_superior_ships = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NEU_high_command_superior_ships
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_naval_superiority }
+			cost = 350
+		}
+	}
+
+	### Army Chiefs
+
+	NEU_army_chief_defenive = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_female_europe.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_defensive
+			allowed = { original_tag = NEU }
+			traits = { army_chief_defensive_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_offensive = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_4.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_offensive
+			allowed = { original_tag = NEU }
+			traits = { army_chief_offensive_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_training = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_2.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_training
+			allowed = { original_tag = NEU }
+			traits = { army_chief_drill_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_experience = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_experience
+			allowed = { original_tag = NEU }
+			traits = { army_chief_reform_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_organisation = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_organisation
+			allowed = { original_tag = NEU }
+			traits = { army_chief_organizational_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_planning = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_planning
+			allowed = { original_tag = NEU }
+			traits = { army_chief_planning_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_morale = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_morale
+			allowed = { original_tag = NEU }
+			traits = { army_chief_morale_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_movement = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_movement
+			allowed = { original_tag = NEU }
+			traits = { army_chief_maneuver_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_entrenchment = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_entrenchment
+			allowed = { original_tag = NEU }
+			traits = { army_entrenchment_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_armored = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_armored
+			allowed = { original_tag = NEU }
+			traits = { army_armored_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_artillery = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_artillery 
+			allowed = { original_tag = NEU }
+			traits = { army_artillery_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_infantry = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_infantry
+			allowed = { original_tag = NEU }
+			traits = { army_infantry_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_special_forces = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_special_forces
+			allowed = { original_tag = NEU }
+			traits = { army_commando_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_cavalry = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_cavalry
+			allowed = { original_tag = NEU }
+			traits = { army_cavalry_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_concealment = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_concealment
+			allowed = { original_tag = NEU }
+			traits = { army_concealment_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_logistics = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_logistics
+			allowed = { original_tag = NEU }
+			traits = { army_logistics_3 }
+			cost = 150
+		}
+	}
+
+	NEU_army_chief_regrouping = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NEU_army_chief_regrouping
+			allowed = { original_tag = NEU }
+			traits = { army_regrouping_3 }
+			cost = 150
+		}
+	}
+
+	### Air Chiefs
+
+	NEU_air_chief_experience = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_experience
+			allowed = { original_tag = NEU }
+			traits = { air_chief_reform_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_safety = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_safety
+			allowed = { original_tag = NEU }
+			traits = { air_chief_safety_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_night_operations = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_night_operations
+			allowed = { original_tag = NEU }
+			traits = { air_chief_night_operations_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_ground_support = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_ground_support
+			allowed = { original_tag = NEU }
+			traits = { air_chief_ground_support_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_all_weather = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_all_weather
+			allowed = { original_tag = NEU }
+			traits = { air_chief_all_weather_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_combat_training = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_combat_training
+			allowed = { original_tag = NEU }
+			traits = { air_air_combat_training_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_naval_strikes = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_naval_strikes
+			allowed = { original_tag = NEU }
+			traits = { air_naval_strike_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_interception = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_interception
+			allowed = { original_tag = NEU }
+			traits = { air_bomber_interception_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_air_superiority = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_air_superiority
+			allowed = { original_tag = NEU }
+			traits = { air_air_superiority_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_close_air_support = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_close_air_support
+			allowed = { original_tag = NEU }
+			traits = { air_close_air_support_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_strategic_bombing = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_strategic_bombing
+			allowed = { original_tag = NEU }
+			traits = { air_strategic_bombing_3 }
+			cost = 150
+		}
+	}
+
+	NEU_air_chief_paratroopers = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NEU_air_chief_paratroopers
+			allowed = { original_tag = NEU }
+			traits = { air_airborne_3 }
+			cost = 150
+		}
+	}
+
+	### Navy Chiefs
+
+	NEU_navy_chief_battle_strength = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_battle_strength
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_decisive_battle_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_aviation = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_aviation
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_naval_aviation_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_convoi_raiding = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_convoi_raiding
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_commerce_raiding_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_experience = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_experience
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_reform_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_maneuvering = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_maneuvering
+			allowed = { original_tag = NEU }
+			traits = { navy_chief_maneuver_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_anti_submarine = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_anti_submarine
+			allowed = { original_tag = NEU }
+			traits = { navy_anti_submarine_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_anti_air = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_anti_air
+			allowed = { original_tag = NEU }
+			traits = { navy_naval_air_defense_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_logistics = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_logistics
+			allowed = { original_tag = NEU }
+			traits = { navy_fleet_logistics_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_amphibious_landings = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_amphibious_landings
+			allowed = { original_tag = NEU }
+			traits = { navy_amphibious_assault_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_submarines = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_submarines
+			allowed = { original_tag = NEU }
+			traits = { navy_submarine_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_capital_ships = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_capital_ships
+			allowed = { original_tag = NEU }
+			traits = { navy_capital_ship_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_small_ships = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_small_ships 
+			allowed = { original_tag = NEU }
+			traits = { navy_screen_3 }
+			cost = 150
+		}
+	}
+
+	NEU_navy_chief_carriers = {
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = NEU_navy_chief_carriers 
+			allowed = { original_tag = NEU }
+			traits = { navy_carrier_3 }
+			cost = 150
+		}
+	}
+
+	### Field Marshals
+
+	NEU_mawehsowa_kasehkowa = {
+		name = NEU_mawehsowa_kasehkowa
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist bearer_of_artillery logistics_wizard commando }
+			skill = 5
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	NEU_makinoso_likanowo = {
+		name = NEU_makinoso_likanowo 
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist armor_officer commando }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	### Corps Commanders
+
+	NEU_lozakehso_tanehlaso = {
+		name = NEU_lozakehso_tanehlaso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer bearer_of_artillery commando naval_invader }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	NEU_lantehkio_mehniwoso = {
+		name = NEU_lantehkio_mehniwoso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer armor_officer commando naval_invader }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NEU_misowako_katzakino = {
+		name = NEU_misowako_katzakino
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer swamp_fox }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NEU_jokanilius_kehwakoso = {
+		name = NEU_jokanilius_kehwakoso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer trait_mountaineer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NEU_taniwehso_makinehsiwo = {
+		name = NEU_taniwehso_makinehsiwo
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander = {
+			traits = { swamp_fox trait_mountaineer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NEU_lokawehko_kinomehso = {
+		name = NEU_lokawehko_kinomehso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		corps_commander = {
+			traits = { swamp_fox }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NEU_kutilius_ehfagiso = {
+		name = NEU_kutilius_ehfagiso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			traits = { ranger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	NEU_kehlitawo_asogaso = {
+		name = NEU_kehlitawo_asogaso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_13.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_13.dds"
+			}
+		}
+		corps_commander = {
+			traits = { hill_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	NEU_mehsilius_wakinehso = {
+		name = NEU_mehsilius_wakinehso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				small="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	### Navy Leaders
+
+	NEU_laehnaza_kehzawokaso = {
+		name = NEU_laehnaza_kehzawokaso
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer navy_media_personality bold gunnery_expert }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			maneuvering_skill = 7
+			coordination_skill = 4
+		}
+	}
+
+	NEU_navy_leader_0 = {
+		portraits = {
+			army = {
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader = {
+			traits = { bold }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+
+	### Theorists
+
+	NEU_theorist_rocketry = {
+		name = NEU_theorist_rocketry
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}	
+		advisor = {
+			slot = theorist
+			idea_token = NEU_theorist_rocketry
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_theorist_rocketry }
+			cost = 150
+		}
+	}
+
+	NEU_theorist_nuclear = {
+		name = NEU_theorist_nuclear
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/idea_generic_political_advisor_europe_6.dds"
+			}
+		}	
+		advisor = {
+			slot = theorist
+			idea_token = NEU_theorist_nuclear
+			allowed = { original_tag = NEU }
+			traits = { NEU_trait_theorist_nuclear }
+			cost = 150
+		}
+	}
+}

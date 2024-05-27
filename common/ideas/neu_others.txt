@@ -1,0 +1,19 @@
+ideas = {
+	country {
+		SWE_idea_vem_kan_stoppa_mig = {
+			allowed = { original_tag = SWE }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				planning_speed = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			rule = {
+				can_boost_other_ideologies = yes
+				can_guarantee_other_ideologies = yes
+				can_lower_tension = yes
+			}
+		}
+	}
+}

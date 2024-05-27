@@ -1,0 +1,48 @@
+add_namespace = NEU
+
+country_event = {
+	id = NEU.100
+	title = NEU.100.t
+	desc = NEU.100.desc
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 0 }
+	option = {
+		name = NEU.100.a
+		country_event = NEU.101
+	}
+#	option = {
+#		name = NEU.100.b
+#		country_event = NEU.102
+#	}
+}
+
+country_event = {
+	id = NEU.101
+	title = NEU.101.t
+	desc = NEU.101.desc
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 0 }
+	option = {
+		name = NEU.101.a
+		set_capital = { state = 763 }
+	}
+	option = {
+		name = NEU.101.b
+		set_capital = { state = 64 }
+	}
+	option = {
+		name = NEU.101.c
+		set_capital = { state = 219 }
+	}
+}
+
+country_event = {
+	id = NEU.102
+	title = NEU.102.t
+	desc = NEU.102.desc
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 0 }
+	option = {
+		name = NEU.102.a
+	}
+}

@@ -1,0 +1,93 @@
+NEU_neutonian_empire_decisions = {
+	NEU_change_capital = {
+		cost = 100
+		days_re_enable = 1
+		complete_effect = { country_event = NEU.100 }
+		days_remove = 0
+		ai_will_do = { factor = 0 }
+	}
+	NEU_peace_pact_germany = {
+		cost = 100
+       		visible = {
+			GER = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { GER = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+	NEU_peace_pact_sweden = {
+		cost = 100
+       		visible = {
+			SWE = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { SWE = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+	NEU_peace_pact_lithuania = {
+		cost = 100
+       		visible = {
+			LIT = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { LIT = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+	NEU_peace_pact_latvia = {
+		cost = 100
+       		visible = {
+			LAT = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { LAT = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+	NEU_peace_pact_estonia = {
+		cost = 100
+       		visible = {
+			EST = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { EST = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+	NEU_peace_pact_poland = {
+		cost = 100
+       		visible = {
+			POL = {
+				NOT = { has_idea = NEU_idea_peace_pact_member }
+				is_in_faction_with = NEU
+				is_ai = yes
+			}
+		}
+		available = { NEU = { has_completed_focus = NEU_form_peace_pact } }
+		complete_effect = { POL = { add_ideas = NEU_idea_peace_pact_member } }
+		days_remove = 0
+		ai_will_do = { base = 0 }
+	}
+}
